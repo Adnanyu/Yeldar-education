@@ -1,6 +1,10 @@
 // app/post/[id].js
-export default function Post({params,}: {
-  params: { universityName: string };
+type PageProps = {
+    universityName: string;
+}
+
+export default function Post({params}: {
+  params: PageProps;
 }) {
 
   const universities = [
