@@ -236,3 +236,24 @@ export default function Post({ params }: PageProps) {
     </div>
   )
 }
+
+
+export async function generateStaticParams() {
+  return [
+    { universityName: "aydin" },
+    { universityName: "Bahcesehir" },
+    { universityName: "Medipol" },
+    { universityName: "Biruni" },
+    { universityName: "yusyil" },
+    { universityName: "istinye" },
+    { universityName: "altinbash" },
+    { universityName: "Atlas" },
+    { universityName: "Kent" },
+    { universityName: "Gelisim" },
+    { universityName: "Kultur" },
+    { universityName: "Nisantasi" },
+    { universityName: "Beykent" },
+    { universityName: "Beykos" },
+    { universityName: "Bilgi" }
+  ];
+}
