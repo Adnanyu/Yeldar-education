@@ -1,4 +1,5 @@
 // app/post/[id].js
+'use client'
 type PageProps = {
   params: {
     universityName: string;
