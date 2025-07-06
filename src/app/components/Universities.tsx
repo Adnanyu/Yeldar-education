@@ -4,20 +4,90 @@
 import { useEffect, useRef, useState } from 'react';
 
 const universities = [
-  { name: 'Istanbul Aydin University', logo: 'universities/istanbul_Ay.png' },
-  { name: 'Istanbul Biruni University', logo: 'universities/biruni.png' },
-  { name: 'Istanbul Yeni Yüz Yıl', logo: 'universities/yuz.png' },
-  { name: 'Istanbul Kent University', logo: 'universities/kent.png' },
-  { name: 'Atlas University', logo: 'universities/atlas.webp' },
-  { name: 'Istanbul altinbas University', logo: 'universities/altinbas.webp' },
-  { name: 'Bahcesehir University', logo: 'universities/bau.png' },
-  { name: 'Beykent University', logo: 'universities/beykent.webp' },
-  { name: 'Beykoz University', logo: 'universities/beykoz.webp' },
-  { name: 'Istanbul Kultur University', logo: 'universities/kultur.webp' },
-  { name: 'Nisantasi University', logo: 'universities/nisantasi.webp' },
-  { name: 'Istanbul Bilgi University', logo: 'universities/bilgi.webp' },
-  { name: 'Istanbul Gelisim University', logo: 'universities/gelisim.webp' },
-  { name: 'Istinye University', logo: 'universities/istinye.webp' },
+     {
+    name: "Istanbul Aydin University",
+    link: "aydin",
+    logo: 'universities/istanbul_Ay.png'
+    },
+  {
+    name: "Istanbul Bahcesehir University",
+    link: "Bahcesehir",
+    logo: 'universities/bau.png' 
+  },
+  {
+    name: "Istanbul Medipol University",
+    link: "Medipol",
+    logo: 'universities/medipol.png',
+  },
+  {
+    name: "Biruni University",
+    link: "Biruni",
+    logo: 'universities/biruni.png'
+  },
+  {
+    name: "Yeni Yüzyıl University",
+    link: "yusyil",
+    logo: 'universities/yuz.png'
+  },
+  {
+    name: "Istinye University",
+    link: "istinye",
+    logo: 'universities/istinye.webp'
+  },
+  {
+    name: "Altınbaş University",
+    link: "altinbash",
+    logo: 'universities/altinbas.webp'
+  },
+  {
+    name: "Istanbul Atlas University",
+    link: "Atlas",
+    logo: 'universities/atlas.webp'
+  },
+  {
+    name: "Istanbul Kent University",
+    link: "Kent",
+    logo: 'universities/kent.png',
+  },
+//   {
+//     name: "Altınbaş University",
+//     year_of_establishment: 1997,
+//     ranking_globally: 3105,
+//     ranking_locally: 73,
+//     number_of_specializations: 4,
+//     prices_start_from: 0,
+//     prices_to: 14000
+//   },
+  {
+    name: "Istanbul Gelişim University",
+    link: "Gelisim",
+    logo: 'universities/gelisim.webp'
+  },
+  {
+    name: "Istanbul Kultur University",
+    link: "Kultur",
+    logo: 'universities/kultur.webp'
+  },
+  {
+    name: "Istanbul Nisantasi University",
+    link: "Nisantasi",
+    logo: 'universities/nisantasi.webp'
+  },
+  {
+    name: "Beykent University",
+    link: "Beykent",
+    logo: 'universities/beykent.webp'
+  },
+  {
+    name: "Beykos University",
+    link: "Beykos",
+    logo: 'universities/beykoz.webp'
+  },
+  {
+    name: "Istanbul Bilgi University",
+    link: "Bilgi",
+    logo: 'universities/bilgi.webp'
+  }
 ];
 
 const Universities = () => {
@@ -91,7 +161,7 @@ const Universities = () => {
                     key={`${university.name}-${index}`}
                   >
                     <div className="bg-white inline-flex size-28 items-center justify-center overflow-hidden rounded-full p-2 md:p-3 lg:size-[214px] lg:p-5">
-                      <a href={`/university/${university.name}`} className="inline-block size-full">
+                      <a href={`/universities/${university.link}`} className="inline-block size-full">
                         <img
                           src={university.logo}
                           alt={university.name}
