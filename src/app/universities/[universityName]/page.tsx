@@ -1,12 +1,11 @@
 // app/post/[id].js
-'use client'
-type PageProps = {
-  params: {
-    universityName: string;
-  };
-};
+interface PageProps {
+  params: Promise<{ universityName: string }>
+}
 
-export default function Post({ params }: PageProps) {
+
+
+export default async function Post({ params }: PageProps) {
 
   const universities = [
      {
@@ -186,7 +185,7 @@ export default function Post({ params }: PageProps) {
 ];
 
 
-  const { universityName } = params
+  const { universityName } = await params;
   const university = universities.find(uni => uni.link.toLocaleLowerCase().includes(universityName.toLocaleLowerCase()))
   return (
     <div className="space-y-4 h-full">
