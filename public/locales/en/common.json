@@ -1,5 +1,73 @@
 {
-    "welcome": "Welcome to Itqan Education",
-    "services": "Our Services"
+  "nav": {
+    "home": "Home",
+    "universities": "Universities",
+    "services": "Services",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Yeldar Education",
+    "subtitle": "Don't Miss The Chance, Register now in the best Turkish universities",
+    "contactUs": "Contact Us",
+    "ourServices": "Our Services"
+  },
+  "services": {
+    "title": "Our service",
+    "subtitle": "If you registered through us",
+    "freeAdmission": "Free university admission.",
+    "healthInsurance": "Health insurance.",
+    "translation": "Translation and certification services.",
+    "residence": "Obtaining and renewing residence permits."
+  },
+  "specialties": {
+    "title": "Most popular majors",
+    "engineering": "Engineering and Technology",
+    "medical": "Medical and Health Sciences",
+    "sciences": "Sciences",
+    "business": "Business Management",
+    "arts": "Arts, Design, Architecture"
+  },
+  "universities": {
+    "title": "Partner Universities"
+  },
+  "testimonials": {
+    "title": "Student Testimonials",
+    "ali": {
+      "name": "Ali",
+      "message": "They made the process so easy! Got into my dream university."
+    },
+    "sara": {
+      "name": "Sara",
+      "message": "Very professional and helpful from start to finish."
+    }
+  },
+  "footer": {
+    "copyright": "Yeldar Education. All rights reserved."
+  },
+  "about": {
+    "title": "About Us",
+    "whoWeAre": "Who we are:",
+    "whoWeAreText": "Yildar Education is an educational institution specializing in providing comprehensive consulting services to international students seeking to study at private Turkish universities. The agency strives to facilitate students' educational journeys from the moment they consider studying in Turkey until they settle into academic and living stability. This is achieved by providing comprehensive support at all stages, including choosing the appropriate major, applying to universities, preparing the required documents, and following up after arrival.",
+    "ourVision": "Our vision:",
+    "ourVisionText": "To be the first choice for students wishing to study in Türkiye by providing high-quality, reliable, and professional educational services.",
+    "ourServices": "Our Services:",
+    "service1": "Free admission guarantee to the best private Turkish universities.",
+    "service2": "Free academic consultations to help you choose the major that best suits your abilities and ambitions.",
+    "service3": "Professional Turkish residency application services to ensure a stable legal status for students throughout their studies.",
+    "service4": "Sworn translation and notarization of all official documents to ensure their acceptance by educational and official authorities in Turkey.",
+    "service5": "Authentication of university degrees after graduation by the relevant authorities to ensure their official accreditation."
+  },
+  "contact": {
+    "title": "Contact Us",
+    "email": "Email:",
+    "whatsapp": "WhatsApp:",
+    "clickHere": "Click here",
+    "visitUs": "Visit us:"
+  },
+  "whatsappMessage": "Hello! Can you give me more information about universities.",
+  "language": {
+    "english": "English",
+    "arabic": "العربية"
   }
-  
+}

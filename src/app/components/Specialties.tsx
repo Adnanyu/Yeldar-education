@@ -1,37 +1,37 @@
+'use client';
 import React from 'react';
+import { useLanguage } from '../context/LanguageContext';
 
 function Specialties() {
+  const { t } = useLanguage();
+
   const specialties = [
     {
-      name: 'Engineering and Technology',
+      nameKey: 'specialties.engineering',
       imageSource: 'engineers.png'
     },
     {
-      name: 'Medical and Health Sciences',
+      nameKey: 'specialties.medical',
       imageSource: 'medical-team.png'
     },
     {
-      name: 'Sciences',
+      nameKey: 'specialties.sciences',
       imageSource: 'engineers.png'
     },
     {
-      name: 'Business Management',
+      nameKey: 'specialties.business',
       imageSource: 'engineers.png'
     },
     {
-      name: 'Arts, Design, Architecture',
+      nameKey: 'specialties.arts',
       imageSource: 'engineers.png'
     },
-    // {
-    //   name: 'Social Sciences, Law, Teaching, Languages',
-    //   image: ''
-    // }
   ];
 
   return (
     <section className="flex flex-col py-8 space-y-9 bg-white" id="">
       <h2 className="text-center text-xl md:text-2xl lg:text-3xl font-extrabold text-[#242D4B] flex justify-center gap-x-2 flex-col md:flex-row">
-        Most popular majors
+        {t('specialties.title')}
       </h2>
       <div className="container mx-auto 6xl:!container lg:max-w-[85vw]">
         <div>
@@ -40,9 +40,9 @@ function Specialties() {
             <div className="pb-8" key={index}>
             <div className="border bg-white text-card-foreground shadow-all group flex h-full w-full cursor-pointer flex-col justify-center rounded-2xl border-none px-3 py-6 shadow-none duration-300 md:my-4 hover:shadow-xl">
                   <div className="flex-col flex h-full items-center justify-center space-y-5 p-0 text-center">
-                  <img src={specialty.imageSource} alt={specialty.name} className="size-16 duration-300 group-hover:scale-105 md:size-36"/>
+                  <img src={specialty.imageSource} alt={t(specialty.nameKey)} className="size-16 duration-300 group-hover:scale-105 md:size-36"/>
                   <div className="tracking-tight w-full text-wrap text-base text-gray-500 group-hover:text-primary md:text-2xl font-normal">
-                    <h3>{specialty.name}</h3>
+                    <h3>{t(specialty.nameKey)}</h3>
                   </div>
               </div>
             </div>

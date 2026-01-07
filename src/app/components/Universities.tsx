@@ -2,6 +2,7 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
+import { useLanguage } from '../context/LanguageContext';
 
 const universities = [
      {
@@ -91,6 +92,7 @@ const universities = [
 ];
 
 const Universities = () => {
+  const { t, dir } = useLanguage();
   const [currentIndex, setCurrentIndex] = useState(0);
   const [itemWidth, setItemWidth] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(true);
@@ -141,7 +143,7 @@ const Universities = () => {
   return (
     <section className="flex flex-col py-8 space-y-9">
       <h2 className="text-center text-xl md:text-2xl lg:text-3xl font-bold text-[#242D4B] flex justify-center gap-x-2 flex-col md:flex-row">
-        <span className="text-secondary">Partner Universities</span>
+        <span className="text-secondary">{t('universities.title')}</span>
       </h2>
 
       <div className="container mx-auto lg:max-w-[85vw]">
