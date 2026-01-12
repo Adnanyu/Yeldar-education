@@ -16,15 +16,15 @@ function Specialties() {
     },
     {
       nameKey: 'specialties.sciences',
-      imageSource: 'engineers.png'
+      imageSource: 'chemistry.png'
     },
     {
       nameKey: 'specialties.business',
-      imageSource: 'engineers.png'
+      imageSource: 'project-manager.png'
     },
     {
       nameKey: 'specialties.arts',
-      imageSource: 'engineers.png'
+      imageSource: 'graphic-designer.png'
     },
   ];
 

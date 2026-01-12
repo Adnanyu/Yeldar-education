@@ -33,13 +33,17 @@
   },
   "testimonials": {
     "title": "Student Testimonials",
-    "ali": {
-      "name": "Ali",
-      "message": "They made the process so easy! Got into my dream university."
+    "hamza": {
+      "name": "Hamza",
+      "message": "Thank God, the service was fast and the price was very good. I had a problem with my residency. I spoke with more than one office, and they were the only one who could solve it."
     },
-    "sara": {
-      "name": "Sara",
-      "message": "Very professional and helpful from start to finish."
+    "kayan": {
+      "name": "Kayan",
+      "message": "Yilder is one of those people that you’re extremely lucky to know. From personal experience, for any services in Turkey—investment, university registration, health insurance, renewing or applying for residency, and other services."
+    },
+    "nihal": {
+      "name": "Nihal",
+      "message": "I’m very thankful to Yeldar Education Agency for their great help with my residence permit process. Mr. Yeldar was professional, patient, and supportive throughout the whole procedure."
     }
   },
   "footer": {
@@ -48,7 +52,7 @@
   "about": {
     "title": "About Us",
     "whoWeAre": "Who we are:",
-    "whoWeAreText": "Yildar Education is an educational institution specializing in providing comprehensive consulting services to international students seeking to study at private Turkish universities. The agency strives to facilitate students' educational journeys from the moment they consider studying in Turkey until they settle into academic and living stability. This is achieved by providing comprehensive support at all stages, including choosing the appropriate major, applying to universities, preparing the required documents, and following up after arrival.",
+    "whoWeAreText": "Yeldar Education is an educational institution specializing in providing comprehensive consulting services to international students seeking to study at private Turkish universities. The agency strives to facilitate students' educational journeys from the moment they consider studying in Turkey until they settle into academic and living stability. This is achieved by providing comprehensive support at all stages, including choosing the appropriate major, applying to universities, preparing the required documents, and following up after arrival.",
     "ourVision": "Our vision:",
     "ourVisionText": "To be the first choice for students wishing to study in Türkiye by providing high-quality, reliable, and professional educational services.",
     "ourServices": "Our Services:",

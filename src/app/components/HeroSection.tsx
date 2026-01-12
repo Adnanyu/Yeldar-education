@@ -1,6 +1,7 @@
 'use client';
 import React from 'react';
 import { useLanguage } from '../context/LanguageContext';
+import Link from 'next/link';
 
 function HeroSection() {
   const { t } = useLanguage();
@@ -30,7 +31,7 @@ function HeroSection() {
               {t('hero.contactUs')}
             </button>
             <button className="md:w-1/2 py-3 bg-[#242D4B] text-white rounded-full font-bold border-white border hover:bg-[#1a2138] transition-colors">
-              {t('hero.ourServices')}
+              <Link href="/services" className="select-none block py-2 text-base xl:text-lg 2xl:text-xl">{t('hero.ourServices')}</Link>
             </button>
           </div>
         </div>
