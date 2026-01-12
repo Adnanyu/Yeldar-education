@@ -26,7 +26,7 @@ const CLONE_COUNT = 5;
 export default function Universities() {
   const { t, dir } = useLanguage();
 
-  const carouselRef = useRef(null);
+  const carouselRef = useRef<HTMLDivElement | null>(null);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [itemWidth, setItemWidth] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(true);
@@ -42,7 +42,7 @@ export default function Universities() {
     const measure = () => {
       if (!carouselRef.current) return;
 
-      const item = carouselRef.current.querySelector('.carousel-item');
+      const item = carouselRef.current.querySelector<HTMLElement>('.carousel-item');
       if (item) {
         setItemWidth(item.offsetWidth);
       }
