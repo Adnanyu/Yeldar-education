@@ -18,7 +18,8 @@
     "freeAdmission": "Free university admission.",
     "healthInsurance": "Health insurance.",
     "translation": "Translation and certification services.",
-    "residence": "Obtaining and renewing residence permits."
+    "residence": "Obtaining and renewing residence permits.",
+    "tasdik": "Authentication of all school and university certificates."
   },
   "specialties": {
     "title": "Most popular majors",
@@ -73,5 +74,8 @@
   "language": {
     "english": "English",
     "arabic": "العربية"
+  },
+  "promo":{
+    "text": "🎉 Special offer: Book your 10-minute consultation now for only $7 🎉"
   }
 }

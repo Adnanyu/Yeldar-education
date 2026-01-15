@@ -7,6 +7,7 @@ import Universities from './components/Universities';
 // import Statistics from './components/Statistics';
 import Footer from './components/Footer';
 import Testimonials from './components/Testimonials';
+import PromoBanner from './components/PromoBanner';
 
 export default function App() {
   return (
@@ -18,6 +19,7 @@ export default function App() {
       <Universities />
       {/* <Statistics /> */}
       <Testimonials />
+      <PromoBanner />
       {/* <Footer /> */}
     </div>
   );
