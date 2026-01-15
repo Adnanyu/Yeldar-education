@@ -20,6 +20,10 @@ const ServicesPage = () => {
         {
             descriptionKey: 'services.residence',
             imageSource: 'identity-card.png'
+        },
+        {
+            descriptionKey: 'services.tasdik',
+            imageSource: 'certif.svg'
         }
     ];
 
@@ -34,7 +38,7 @@ const ServicesPage = () => {
                 </h2>
                 <div className="container mx-auto 6xl:!container lg:max-w-[85vw]">
                     <div>
-                    <div className="grid w-full sm:grid-cols-4 gap-4 px-4 md:px-0 grid-cols-2">
+                    <div className="grid w-full sm:grid-cols-3 gap-4 px-4 md:px-0 grid-cols-2">
                         {services.map((service, index) => (
                         <div className="pb-8" key={index}>
                         <div className="border bg-white text-card-foreground shadow-all group flex h-full w-full cursor-pointer flex-col justify-center rounded-2xl border-none px-3 py-6 shadow-none duration-300 md:my-4 hover:shadow-xl">
